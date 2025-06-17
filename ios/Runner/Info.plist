@@ -19,12 +19,12 @@
 					<string>Icon-320.png</string>
 				</array>
 				<key>CFBundleTypeName</key>
-				<string>cz.proscholy.share_playlist</string>
+				<string>cce.evangelicky-kancional.share_playlist</string>
 				<key>LSHandlerRank</key>
 				<string>Owner</string>
 				<key>LSItemContentTypes</key>
 				<array>
-					<string>cz.proscholy</string>
+					<string>cce.evangelicky-kancional</string>
 				</array>
 			</dict>
 		</array>
@@ -95,7 +95,7 @@
 					<string>Icon-320.png</string>
 				</array>
 				<key>UTTypeIdentifier</key>
-				<string>cz.proscholy</string>
+				<string>cce.evangelicky-kancional</string>
 				<key>UTTypeTagSpecification</key>
 				<dict>
 					<key>public.filename-extension</key>

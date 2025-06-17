@@ -4,7 +4,7 @@ import time
 
 url = 'https://zpevnik.proscholy.cz/graphql'
 
-headers = {'Content-type': 'application/json'}
+headers = {'Content-type': 'application/json', 'Filter-Content': 'ek'}
 
 all_data = {
     'query': '''query {

@@ -72,7 +72,7 @@ class SpotlightService: NSObject {
             attributeSet.displayName = item.title
             attributeSet.contentDescription = item.description
 
-            let searchableItem = CSSearchableItem(uniqueIdentifier: item.identifier, domainIdentifier: "cz.proscholy", attributeSet: attributeSet)
+            let searchableItem = CSSearchableItem(uniqueIdentifier: item.identifier, domainIdentifier: "cce.evangelicky-kancional", attributeSet: attributeSet)
             searchableItem.expirationDate = Date.distantFuture
 
             searchableItems.append(searchableItem)

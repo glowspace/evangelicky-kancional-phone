@@ -1,4 +1,3 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -9,7 +8,6 @@ import 'package:path/path.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:zpevnik/firebase_options.dart';
 import 'package:proscholy_common/models/generated/objectbox.g.dart';
 import 'package:proscholy_common/providers/app_dependencies.dart';
 import 'package:proscholy_common/providers/settings.dart';
@@ -21,12 +19,12 @@ import 'package:proscholy_common/theme.dart';
 import 'package:proscholy_common/utils/services/external_actions.dart';
 import 'package:proscholy_common/utils/services/spotlight.dart';
 
-const _title = 'Zpěvník';
+const _title = 'Evangelický kancionál';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   final appDependencies = AppDependencies(
     sharedPreferences: await SharedPreferences.getInstance(),

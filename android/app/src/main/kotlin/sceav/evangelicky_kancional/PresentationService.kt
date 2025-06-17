@@ -1,4 +1,4 @@
-package jozkar.mladez
+package sceav.evangelicky_kancional
 
 import java.io.BufferedReader
 import java.io.InputStreamReader

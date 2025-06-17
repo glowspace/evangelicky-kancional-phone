@@ -1,4 +1,4 @@
-package jozkar.mladez
+package sceav.evangelicky_kancional
 
 import android.os.Bundle
 import android.content.Intent
