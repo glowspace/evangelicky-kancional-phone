@@ -66,6 +66,6 @@
 //     databaseURL: 'https://proscholycz.firebaseio.com',
 //     storageBucket: 'proscholycz.appspot.com',
 //     iosClientId: '1053312555544-rubd9dm06da6qqv3dppg5ht7cqfrqqbp.apps.googleusercontent.com',
-//     iosBundleId: 'cce.evangelicky-kancional.Zpevnik',
+//     iosBundleId: 'sceav.evangelicky-kancional.Zpevnik',
 //   );
 // }
