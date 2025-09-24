@@ -1,3 +1,5 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -18,13 +20,15 @@ import 'package:proscholy_common/screens/presentation.dart';
 import 'package:proscholy_common/theme.dart';
 import 'package:proscholy_common/utils/services/external_actions.dart';
 import 'package:proscholy_common/utils/services/spotlight.dart';
+import 'package:zpevnik/firebase_options.dart';
 
 const _title = 'Evangelický kancionál';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  FirebaseAnalytics.instance.setUserProperty(name: 'app', value: 'EK');
 
   final appDependencies = AppDependencies(
     sharedPreferences: await SharedPreferences.getInstance(),
@@ -53,7 +57,7 @@ Future<void> main() async {
 
   await SentryFlutter.init(
     (options) {
-      options.dsn = 'https://4398b4421c372b093c4f88c16dff9c63@o4506177850572800.ingest.sentry.io/4506177851621376';
+      options.dsn = 'https://2ec9d7bf771fdd22006ab4b0f737df4b@o4506177850572800.ingest.sentry.io/4510074276741120';
       options.tracesSampleRate = 1.0;
     },
     appRunner: appRunner,
@@ -96,7 +100,10 @@ class MainWidget extends ConsumerWidget {
       themeMode: themeMode,
       initialRoute: initialRoute ?? '/',
       onGenerateRoute: AppRouter.generateRoute,
-      navigatorObservers: [ref.read(appNavigatorObserverProvider)],
+      navigatorObservers: [
+        ref.read(appNavigatorObserverProvider),
+        FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
+      ],
     );
   }
 }
