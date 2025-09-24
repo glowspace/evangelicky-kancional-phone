@@ -52,6 +52,7 @@ song_lyrics_data = {
                     pivot {
                         id
                         number
+                        song_name
                         song_lyric {
                             id
                         }

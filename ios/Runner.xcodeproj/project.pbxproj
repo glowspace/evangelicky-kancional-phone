@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A434B3018F578C8E5F4E16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0A8892889B0901B4082624 /* GoogleService-Info.plist */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		394C847D2ADD9BA70088CCF2 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 394C84792ADD9BA70088CCF2 /* Icon-29.png */; };
 		394C847E2ADD9BA70088CCF2 /* Icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 394C847A2ADD9BA70088CCF2 /* Icon-64.png */; };
@@ -73,6 +74,7 @@
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDF4ADC85F2EB2228FC527A3 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		F4EC4D3D4917A18903F07582 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0A8892889B0901B4082624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Runner/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				97C146EF1CF9000F007C117D /* Products */,
 				242462541261E26545C380A0 /* Pods */,
 				202A7038E7533C084B75406F /* Frameworks */,
+				FB0A8892889B0901B4082624 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +245,7 @@
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				3951CA1E297D46C500876FCE /* Main.storyboard in Resources */,
 				394C847D2ADD9BA70088CCF2 /* Icon-29.png in Resources */,
+				07A434B3018F578C8E5F4E16 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +260,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -438,7 +446,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sceav.evangelicky-kancional.Zpevnik";
+				PRODUCT_BUNDLE_IDENTIFIER = "sceav.glowspace.evangelicky-kancional";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -590,7 +598,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sceav.evangelicky-kancional.Zpevnik";
+				PRODUCT_BUNDLE_IDENTIFIER = "sceav.glowspace.evangelicky-kancional";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -630,7 +638,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sceav.evangelicky-kancional.Zpevnik";
+				PRODUCT_BUNDLE_IDENTIFIER = "sceav.glowspace.evangelicky-kancional";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
